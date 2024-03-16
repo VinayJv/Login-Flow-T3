@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>Hello</h1>
+      <h1>{hello?.name}</h1>
     </main>
   );
 }
