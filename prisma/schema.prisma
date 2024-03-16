@@ -16,9 +16,10 @@ model Category {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  email    String   @unique
-  name     String?
-  password String?
-  category String[]
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String?
+  password  String?
+  category  String[]
+  createdAt DateTime @default(now())
 }
