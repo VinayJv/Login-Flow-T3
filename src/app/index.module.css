@@ -1,10 +1,31 @@
 .main {
   display: flex;
+  padding: 1rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, #2e026d, #15162c);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ul{
+  display: flex;
+  gap: 10px;
+  font-weight: bolder;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.iconContainer{
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .container {
