@@ -1,8 +1,6 @@
 import { any, z } from "zod";
-import { sendMail } from "~/app/nodeMailer";
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { db } from "~/server/db";
 
 const userSchema = z.object({
   name: z.string(),
