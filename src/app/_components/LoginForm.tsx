@@ -7,12 +7,12 @@ import { api } from "~/trpc/react";
 import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../context/globalContext";
 
-export default function LoginForm(){
+export default function LoginForm(this: void){
   const { push } = useRouter();
   const [display, setDisplay] = useState(false);
   const findQuery = api.user.getAllUser.useQuery();
   const context = useContext(GlobalContext);
-  console.log(context?.user);
+  console.log(context?.user)
   
   async function loginHandler(event: React.BaseSyntheticEvent){
     event.preventDefault();
