@@ -1,14 +1,8 @@
-import Link from "next/link";
-import { api } from "~/trpc/server";
-import styles from "./index.module.css";
-import { Header } from "./_components/Header";
+import LoginForm from "./_components/LoginForm";
 
-export default async function Home() {
-  const hello = await api.user.getLatest();
+export default async function LandingPage() {
 
   return (
-    <main className={styles.main}>
-      <Header />
-    </main>
+    <LoginForm />
   );
 }
